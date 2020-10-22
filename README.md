@@ -1,4 +1,4 @@
-# Siret Invader
+# mds-siret-invader-optim
 
 ## Introduction
 Siret Invader is a mongodb indexor of high volumetry for the gouvernement account which can insert data from csv format to a NoSQL (MongoDB) database.
@@ -53,4 +53,3 @@ To delete all the running process :
 
 ### Warning :
 If the processes are too heavy for your device, you can change the instances number in the `index.js` file, in the `conf` constant.
-# mds-siret-invader-optim
