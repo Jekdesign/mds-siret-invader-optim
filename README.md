@@ -27,7 +27,7 @@ To start the process :
 ```
 > npm run start
 > or
-> npm start
+> pm2 start
 ```
 To pause the process :
 ```
