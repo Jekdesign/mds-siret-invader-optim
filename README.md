@@ -1,6 +1,6 @@
-# mds-siret-invader-optim
+# 🏠 mds-siret-invader-optim
 
-## Introduction
+## 🗣️ Introduction
 Siret Invader is a mongodb indexor of high volumetry for the gouvernement account which can insert data from csv format to a NoSQL (MongoDB) database.
 
 ## Requirement
@@ -8,7 +8,7 @@ Siret Invader is a mongodb indexor of high volumetry for the gouvernement accoun
 * PM2 version 3.5.0
 * MongoDb & MongoDb Compass
 
-## Installation
+## ⚙️ Installation
 Download the project on your compurter, get in the directory and download the dependencies :
 ```
 > git clone 'https://github.com/Jekdesign/mds-siret-invader-optim.git'
@@ -41,7 +41,7 @@ To delete all the running process :
 ```
 > npm run kill
 ```
-### The working way :
+### ✍️ The working way :
 * The process is running with pm2.
 * It split the csv file in many csv files. (if already done, it only takes the content in the `splittedFiles` folder)
 * It starts 2 instances of the `insertDb.js` child process.

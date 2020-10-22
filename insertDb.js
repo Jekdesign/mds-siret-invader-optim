@@ -51,9 +51,8 @@ class Application {
     * @return {Boolean}
   */
   insertBulk(filename, data, client, index) {
-      //console.log(filename = "FILENAME OO");
     const db = client.db('bigdata')
-    const collection = db.collection('stock'); console.log(collection + "KOLEKSYON");
+    const collection = db.collection('stock');
     const bulk = collection.initializeOrderedBulkOp()
     let iterator = 0
     while (iterator !== (data.length - 1)) {
