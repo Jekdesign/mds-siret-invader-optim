@@ -1,0 +1,5 @@
+allDatas/*
+node_modules
+originalZipFile/*
+package-lock.json
+splittedFiles/*

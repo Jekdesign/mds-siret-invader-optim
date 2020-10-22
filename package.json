@@ -1,0 +1,24 @@
+{
+  "name": "mds-siret-invader-valid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pause": "pm2 stop all",
+    "restart": "pm2 restart all && pm2 logs",
+    "kill": "pm2 delete all",
+    "start": "pm2 start ./index.js && pm2 logs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-split-stream": "^1.0.2",
+    "csvtojson": "^2.0.10",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "npm-check": "^5.9.2",
+    "pm2": "^4.5.0"
+  }
+}
