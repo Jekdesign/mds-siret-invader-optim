@@ -51,6 +51,7 @@ class Application {
     * @return {Boolean}
   */
   insertBulk(filename, data, client, index) {
+    //console.log(filename + "ooooooo");
     const db = client.db('bigdata')
     const collection = db.collection('stock');
     const bulk = collection.initializeOrderedBulkOp()
@@ -59,6 +60,9 @@ class Application {
       bulk.insert(data[iterator])
       iterator += 1
     }
+        // for (let iterator = 0; iterator !== (data.length - 1); iterator++) {
+        //   bulk.insert(data[iterator])
+        // }
     bulk.execute().then(() => {
       console.log(`inserted lines : ${1000 * index}`)
       return true

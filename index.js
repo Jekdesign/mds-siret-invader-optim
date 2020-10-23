@@ -7,8 +7,8 @@ const sourceDirectory = './originalFile'
 const outputDirectory = './splittedFiles'
 const conf = {
   script: './insertDb.js',
-  exec_mode: 'cluster',
-  instances: 6,
+  exec_mode: 'fork',
+  instances: 8,
   max_memory_restart: '2G'
 }
 let files = []
